@@ -1,0 +1,17 @@
+prefix: macs3_pipeline
+
+# Input BAM files for treatment and control
+# Replace these paths with your data files.
+treatment_bam: data/treatment.bam
+control_bam: data/control.bam
+
+# Alignment filtering parameters
+mapq: 30
+fragment_max: 2000
+extsize: 147
+
+# Parameters for bdgcmp and bdgpeakcall
+bdgcmp_pseudo: 1.0e-5
+bdgcmp_lambda_bg: 1.0
+peak_cutoff: 0.01
+peak_min_length: 147
